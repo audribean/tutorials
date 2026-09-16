@@ -8,10 +8,9 @@ dependencies = [
     "pyannote.core>=5.0",
     "pyannote.database>=5.0",
     # Uses pyannote.metrics.errors.{category_metrics,category_plots,
-    # temporal_metrics,temporal_plots}. Pinned as a lower bound only, since
-    # that submodule isn't in the current 4.1 PyPI release yet -- assumed
-    # to ship in a subsequent release.
-    "pyannote.metrics>=4.1",
+    # temporal_metrics,temporal_plots}, added in
+    # https://github.com/pyannote/pyannote-metrics/pull/89
+    "pyannote.metrics",
     "matplotlib>=3.7",
     "pandas>=2.0",
 ]
@@ -21,3 +20,6 @@ dev = [
     "jupyter>=1.0",
     "ipykernel>=6.29",
 ]
+
+[tool.uv.sources]
+"pyannote.metrics" = { git = "https://github.com/pyannote/pyannote-metrics", rev = "refs/pull/89/head" }

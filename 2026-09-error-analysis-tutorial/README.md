@@ -6,8 +6,6 @@ This tutorial walks through `pyannote.metrics`'s error analysis tools for speake
 
 <h1>Environment</h1>
 
-Note: The provided uv environment for running `error_analysis_tutorial.ipynb` assumes Category and Temporal Error Analysis are merged into pyannote.metrics. They are currently included as `pyannote.metrics.errors.{category_metrics,category_plots,temporal_metrics,temporal_plots}`
-
 You can reproduce this environment in four simple steps:
 
 1. Install [uv](https://docs.astral.sh/uv/getting-started/installation/) (v0.11 or newer)
