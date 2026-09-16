@@ -2,6 +2,8 @@
     <h1><code>Error analysis tutorial</code></h1>
 </div>
 
+This tutorial walks through `pyannote.metrics`'s error analysis tools for speaker diarization: `CategoryStats` and `CategoryErrorAnalysis` for breaking down errors by categorical speaker traits (e.g. gender, accent), and `TemporalErrorAnalysis` for breaking them down by a time-series signal (e.g. SNR, reverb), plus the plotting helpers for both.
+
 <h1>Environment</h1>
 
 Note: The provided uv environment for running `error_analysis_tutorial.ipynb` assumes Category and Temporal Error Analysis are merged into pyannote.metrics. They are currently included as `pyannote.metrics.errors.{category_metrics,category_plots,temporal_metrics,temporal_plots}`
