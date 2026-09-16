@@ -13,6 +13,8 @@ dependencies = [
     "pyannote.metrics",
     "matplotlib>=3.7",
     "pandas>=2.0",
+    "tqdm>=4.65",
+    "seaborn>=0.13",
 ]
 
 [dependency-groups]
